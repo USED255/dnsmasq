@@ -16,9 +16,7 @@ services:
             - ./dnsmasq.conf:/etc/dnsmasq.conf
             - ./tftp:/tftp
         restart: always
-        environment:
-            - TZ=Asia/Shanghai
-        network_mode: "host"
+        network_mode: host
 ```
 
 ./dnsmasq.conf
