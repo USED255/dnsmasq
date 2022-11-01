@@ -7,6 +7,18 @@ name: Publish Container
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "Dockerfile"
+      - ".github/workflows/docker-publish.yml"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "Dockerfile"
+      - ".github/workflows/docker-publish.yml"
   schedule:
     - cron: "0 0 * * 1"
 

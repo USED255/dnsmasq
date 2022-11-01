@@ -7,6 +7,7 @@ on:
       - master
     paths:
       - "README.md"
+      - ".github/workflows/sync-readme.yml"
 
 jobs:
   sync:

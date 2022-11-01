@@ -7,11 +7,13 @@ on:
       - master
     paths:
       - "Dockerfile"
+      - ".github/workflows/test.yml"
   pull_request:
     branches:
       - master
     paths:
       - "Dockerfile"
+      - ".github/workflows/test.yml"
 
 jobs:
   test:
